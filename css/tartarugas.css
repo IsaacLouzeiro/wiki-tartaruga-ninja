@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* página inicial */
+ul.lista-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+ul.lista-link li {
+    display: inline-block;
+    list-style-type: none;
+    width: 150px;
+    height: 150px;
+    margin: 30px 20px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+ul.lista-link li span {
+    font-size: 1.2em;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+ul.lista-link li a {
+    width: 156px;
+    height: 156px;
+    border-radius: 155px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid;
+}
+
+ul.lista-link li.don a,
+ul.lista-link li.don span {
+    color: #c500cc;
+}
+
+ul.lista-link li.leo a,
+ul.lista-link li.leo span {
+    color: #336699;
+}
+
+ul.lista-link li.raph a,
+ul.lista-link li.raph span {
+    color: red;
+}
+
+ul.lista-link li.mickey a,
+ul.lista-link li.mickey span {
+    color: #ff9900;
+}
+
+ul.lista-link li:hover span  {
+    font-size: 1.4em;
+    opacity: 0.7;
+    transition: font-size 0.5s, opacity 0.5s;
+}
+
+ul.lista-link li a:hover img {
+    transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+    width: 100px;
+    height: 100px;
+    opacity: 0.7;
+    transition: transform 0.5s, width 0.5s, height 0.5s, opacity 0.5s;
+}
+
+ul.lista-link li a img {
+    width: 90px;
+    height: 90px;
+}
+
+
+.bg-degrade {
+    background-image: linear-gradient(to right, #009fcf, #336699, #c500cc);
+}
+
+.link-bg-degrade li {
+    background-color: #336699;
+}
+
+.link-bg-degrade li:hover {
+    background-color: rgb(146, 74, 228);
+}
+
+
+.bg-azul,
+.link-bg-azul li {
+    background-color: #336699;
+}
+
+.text-azul {
+    color: #336699;
+}
+
+.link-bg-azul li:hover {
+    background-color: #0099cc;
+}
+
+.bg-roxo,
+.link-bg-roxo li {
+    background-color: #c500cc;
+}
+
+.text-roxo {
+    color: #c500cc;
+}
+
+.link-bg-roxo li:hover {
+    background-color: #db19b1;
+}
+
+.bg-laranja,
+.link-bg-laranja li {
+    background-color: #ff9900;
+}
+
+.text-laranja {
+    color: #ff9900;
+}
+
+.link-bg-laranja li:hover {
+    background-color: #ffb342;
+}
+
+.bg-vermelho,
+.link-bg-vermelho li {
+    background-color: red;
+}
+
+.text-vermelho {
+    color: red;
+}
+
+.link-bg-vermelho li:hover {
+    background-color: rgb(255, 85, 85);
+}
+
+.cabecalho {
+    /* background-color: #336699; */
+    color: #ffffff;
+    padding: 15px;
+}
+
+
+.conteudo{
+    width: 100%;
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.artigo {
+    width: 70%;
+    padding:1%;
+    display: inline-block;
+}
+
+.artigo p,
+.artigo h2 {
+    text-align: justify;
+    padding: 15px;
+}
+
+.perfil{
+    display:block;
+    margin: 15px auto;
+    margin-bottom: 50px;
+    max-width: 35%;
+}
+
+.barra-lateral-esquerda, .barra-lateral-direita {
+    width:15%;
+    display:inline-block;
+    height:80vh;
+    margin-bottom: 15px;
+}
+
+
+.barra-lateral-esquerda ul {
+    list-style-type: none;
+    margin: 1%;
+    padding: 1%;
+}
+
+.barra-lateral-esquerda li {
+    padding: 8px;
+    margin-bottom: 7px;
+    /* background-color: #336699; */
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.barra-lateral-esquerda li a {
+    color: #ffffff;
+    text-decoration: none;
+    width:100%;
+    display: block;
+}
+/* 
+.barra-lateral-esquerda li:hover {
+    background-color: #0099cc;
+} */
+
+.barra-lateral-direita h2{
+    /* color: #336699; */
+    margin: 10px 0;
+}
+
+.rodape {
+    /* background:#336699; */
+    padding:1%;
+    color: #FFF;
+    text-align: center;
+}
+
+
+/* Desse ponto em diante estamos falando em responsive*/
+@media screen and (max-width: 768px) {
+    .barra-lateral-esquerda, .barra-lateral-direita {
+        width: 100%;
+        height: 100%;
+        padding:2%;
+    }
+
+    .barra-lateral-direita {
+        margin: auto 15px;
+    }
+
+    .artigo{
+        padding:2%;
+        width:100%;
+        display: inline-block;
+    }
+
+    .rodape {
+        padding:5%;
+    }
+    
+    /* página inicial */
+    ul.lista-link {
+        flex-wrap: wrap;
+    }
+}

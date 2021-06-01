@@ -1,0 +1,11 @@
+Hoje o nosso exercício será trabalhar com a Equipe das Tartarugas Ninjas.
+
+
+
+Precisamos criar páginas para cada uma das tartarugas, além de uma página inicial. Essas páginas devem conter texto e imagens, um menu conectando cada uma das páginas.
+As cores das páginas também devem mudar de acordo com a tartaruga.
+Dentro disso as páginas devem ser testadas dentro de diferentes tamanhos de tela.
+
+
+
+Após criar as telas enviem prints 3 dispositivos diferentes mostrando o efeito do resposive.
